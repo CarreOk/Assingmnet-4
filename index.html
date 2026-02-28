@@ -141,8 +141,8 @@
 
         // 2. ADD EVENT HANDLER FOR EACH <div> (this is the assignment requirement)
         cardDiv.addEventListener("click", function () {
-          // Put an X in THIS square
-          this.textContent = "X";
+          // Put an X or O in THIS square (toggle)
+          this.textContent = this.textContent === "X" ? "O" : "X";
 
           // Popup the number (0–8) of this square
           alert("You clicked square number: " + i);
